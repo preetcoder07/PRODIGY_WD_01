@@ -9,7 +9,7 @@ function scrolltoclick(event, target) {
 }
 
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     var navbar = document.getElementById('navbar');
     var windowHeight = window.innerHeight;
     var scrollPosition = window.scrollY;
@@ -19,5 +19,5 @@ window.addEventListener('scroll', function() {
         navbar.style.backgroundColor = '#e1ab07';
     } else if (scrollPercentage > 40 && scrollPercentage <= 100) {
         navbar.style.backgroundColor = 'grey';
-    } 
+    }
 });
