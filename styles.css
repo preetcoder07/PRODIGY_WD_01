@@ -39,6 +39,7 @@ body {
   list-style-type: none;
   text-decoration: none;
   padding-left: 100px;
+  font-weight: 700;
   font-size: 20px;
   transition: color 0.5s ease-in-out;
 }
@@ -215,7 +216,7 @@ h2 {
 
 .recent {
   text-align: center;
-  margin: 50px;
+  margin: 90px;
 }
 
 .sell {
@@ -225,12 +226,13 @@ h2 {
 }
 
 .cards {
+  margin-top: 100px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
   margin-bottom: 170px;
-  gap: 60px;
+  gap: 80px;
 }
 
 .card1 {
@@ -285,6 +287,7 @@ h4 {
   text-align: center;
   color: rgb(237, 30, 30);
   font-size: 20px;
+  font-weight: 700 !important;
 }
 
 .p5 {
@@ -343,9 +346,14 @@ h4 {
   margin-top: 10px;
 }
 
+.footlist a {
+  font-weight: 600;
+}
+
 .footer {
   background-color: grey;
   padding: 50px;
+
 
 }
 
@@ -354,8 +362,11 @@ h4 {
   color: black;
 }
 
+
 .link {
   list-style-type: none;
+  transition: transform 0.5s ease-in-out;
+
 }
 
 .links ul {
@@ -371,4 +382,24 @@ h4 {
 
 .img_link {
   width: 30px;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.img_link:hover {
+  transform: scale(1.5);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  /* Adjust as needed to avoid a jump effect */
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown-menu li a {
+  font-weight: 700;
 }
